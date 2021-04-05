@@ -1,0 +1,4 @@
+- name: Install list of packages
+  apt:
+    name: ['curl' ,'docker-compose' ,'docker' ,'make' ,'wget' ,'openvpn' ,'dnsutils', 'git']
+  become: yes

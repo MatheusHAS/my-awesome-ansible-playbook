@@ -1,0 +1,4 @@
+- name: Install languages
+  apt: 
+    name: ['nodejs' ,'npm' ,'python3-pip']
+  become: yes
