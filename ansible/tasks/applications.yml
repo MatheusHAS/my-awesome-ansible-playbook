@@ -1,0 +1,23 @@
+- name: Install chrome
+  apt: 
+    name: google-chrome-stable
+  become: yes
+
+- name: Install spotify & opera
+  snap: name={{item}} state=present
+  with_items:
+    - spotify
+    - opera
+  become: yes
+
+- name: Install discord
+  apt:
+    name: discord
+  become: yes
+
+
+- name: Install slack
+  snap:
+    name: slack
+    classic: yes
+  become: yes

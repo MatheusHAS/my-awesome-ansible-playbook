@@ -1,0 +1,7 @@
+- name: Playbook to install my new PC
+  hosts: localhost
+  tasks:
+    - include: tasks/system.yml
+    - include: tasks/languages.yml
+    - include: tasks/tools.yml
+    - include: tasks/applications.yml
